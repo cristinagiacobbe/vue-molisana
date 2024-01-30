@@ -1,8 +1,12 @@
 <script>
+import AppLogo from './Logo.vue'
 
 export default {
     name: 'AppHeader',
 
+    components: {
+        AppLogo
+    }
 
 }
 
@@ -10,7 +14,7 @@ export default {
 
 <template>
     <header>
-        <img src="/la-molisana-logo.png" alt="">
+        <AppLogo></AppLogo>
         <nav>
             <ul class="header_menu">
                 <li><a href="#">Home</a></li>
